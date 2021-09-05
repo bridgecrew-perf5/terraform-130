@@ -7,5 +7,7 @@ output "sample" {
 }
 
 output "sample1" {
-  value = "${var.sample}"
+  value = "${var.sample} - any string"
 }
+
+//variable if it is combined with some other string then we use "${}" interpolation for variable accessing
