@@ -17,3 +17,20 @@ variable "sample2" {}
 output "sample2" {
   value = var.sample2
 }
+
+
+variable "string" {
+  default = "Hello"
+}
+
+variable "number" {
+  default = 100
+}
+
+variable "boolean" {
+  default = true
+}
+
+output "data-types" {
+  value = "string - ${var.string}, number - ${var.number}, boolean - ${var.boolean}"
+}
