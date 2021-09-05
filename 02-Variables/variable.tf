@@ -66,6 +66,6 @@ output "cloud2" {
 }
 
 output "training-details" {
-  value = var.training-details
+  value = "time is ${var.training-details["timing"]}"
 }
 
