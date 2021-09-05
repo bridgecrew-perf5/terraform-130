@@ -18,6 +18,7 @@ output "sample2" {
   value = var.sample2
 }
 
+//var data types
 
 variable "string" {
   default = "Hello"
@@ -34,3 +35,37 @@ variable "boolean" {
 output "data-types" {
   value = "string - ${var.string}, number - ${var.number}, boolean - ${var.boolean}"
 }
+
+//vataible types
+
+variable "training" {
+  default = "DevOps"
+}
+
+variable "clouds" {
+  default = [ "AWS","Azure" ]
+}
+
+variable "training-details" {
+  default = {
+    batch = 57
+    timing = "7AM IST"
+  }
+}
+
+output "trainig" {
+  value = var.training
+}
+
+output "cloud1" {
+  value = var.clouds[0]
+}
+
+output "cloud2" {
+  value = var.clouds[1]
+}
+
+output "training-details" {
+  value = var.training-details
+}
+
